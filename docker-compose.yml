@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react-vite-dev
+    ports:
+      - "3000:5173"   # Vite default port
+    volumes:
+      - .:/app        # Mount current directory to /app in the container
+      - /app/node_modules # Avoid overwriting node_modules
+    stdin_open: true  # Keep stdin open 
+    tty: true         # Allocate a pseudo-TTY 
