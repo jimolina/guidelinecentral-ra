@@ -1,4 +1,11 @@
 #root {
+	button {
+		border: 0;
+		border-radius: 5px;
+		padding: 10px 12px;
+		cursor: pointer;
+		font-weight: bold;
+	}
 
 	.product-grid {
 		display: flex;

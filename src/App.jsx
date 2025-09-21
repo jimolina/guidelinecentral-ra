@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 import ProductCard from './components/ProductCard';
+import './assets/scss/main.scss'
 
 function App() {
   //Product Data test
